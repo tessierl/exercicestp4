@@ -1,4 +1,7 @@
-
+"""
+Crée par Lucas Tessier
+Groupe 402
+"""
 
 
 class Rectangle:

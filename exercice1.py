@@ -1,6 +1,7 @@
-#Crée par Lucas tessier
-#Groupe 402
-
+"""
+Crée par Lucas tessier
+Groupe 402
+"""
 class StringFoo():
     def __init__(self):
         self.message = ""
