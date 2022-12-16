@@ -14,9 +14,13 @@ class Cercle:
     def calcul_circonference(self):
         self.circonference = 2 * self.rayon * pi
     def afficher_infos(self):
-        
+        print(f"Rayon: {self.rayon}")
+        print(f"Aire: {self.aire}")
+        print(f"Circonférence: {self.circonference}")
+
 
 c = Cercle()
 c.rayon = 5
 c.calcul_aire()
 c.calcul_circonference()
+c.afficher_infos()
