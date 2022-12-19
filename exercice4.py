@@ -12,7 +12,7 @@ class Hero():
         self.force_defense = random.randint(1, 6)
         self.nom = ""
     def afficher_combat(self):
-        print(f"Vous êtes {self.nom} et vous avez affronté un monstre!")
+        print(f"Vous êtes {self.nom} et vous allez affronter un monstre!")
         print(f"PVs: {self.pv}")
         print(f"Force d'attaque: {self.force_attaque}")
         print(f"Force de défense: {self.force_defense}")
@@ -27,13 +27,20 @@ class Hero():
         print(f"Force d'attaque: {self.force_attaque}")
         print(f"Force de défense: {self.force_defense}")
         print("")
-        print()
+    def est_vivant(self):
+        if self.pv < 0:
+            return False
+        elif self.pv > 0:
+            return True
 
-
-
+boucle = True
 h = Hero()
-h.nom = "Kévun Tremblay"
-h.afficher_combat()
-h.combat()
-h.dommages(5)
-h.afficher_combat2()
+
+while boucle:
+    h.nom = "Kévun Tremblay"
+    h.afficher_combat()
+    h.combat()
+    h.dommages(5)
+    h.afficher_combat2()
+    h.est_vivant()
+
