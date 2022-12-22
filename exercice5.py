@@ -1,11 +1,14 @@
-#Crée par Lucas Tessier
-#Groupe 402
+"""
+Crée par Lucas Tessier
+Groupe 402
+"""
 
 from dataclasses import dataclass
 import random
 
+
 @dataclass
-class Statsperso():
+class Statsperso:
     force: int
     dexterite: int
     constitution: int
@@ -13,9 +16,12 @@ class Statsperso():
     sagesse: int
     charisme: int
 
-class Test():
+
+class Test:
     def __init__(self):
-        self.stats = Statsperso(random.randint(1, 20), random.randint(1, 20), random.randint(1, 20), random.randint(1, 20), random.randint(1, 20), random.randint(1, 20))
+        self.stats = Statsperso(random.randint(1, 20), random.randint(1, 20), random.randint(1, 20),
+                                random.randint(1, 20), random.randint(1, 20), random.randint(1, 20))
+
 
 t = Test()
 print(f"Notre joueur a une force de {t.stats.force}")

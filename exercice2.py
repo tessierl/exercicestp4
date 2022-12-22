@@ -12,6 +12,7 @@ class Rectangle:
 
     def calcul_aire(self):
         self.aire = self.longeur * self.largeur
+
     def afficher_infos(self):
         print(f"Longeur: {self.longeur}")
         print(f"Largeur: {self.largeur}")
